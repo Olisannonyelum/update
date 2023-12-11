@@ -42,7 +42,7 @@ class Test(MDApp):
     def selec_date(self,instance,value,date_range):
         #print("---->",str(value))
         try:
-            self.filename=f'app_image\\missal\\{value}.txt'
+            self.filename=f'app_image\\missal\\2023-12-01.txt'
             #self.file=open("C:\\Users\\Nnonyelume\\Desktop\\clone\\R@1n.txt")
             #print(self.path)
             self.path= resource_find(self.filename)
