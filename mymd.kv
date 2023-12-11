@@ -1,0 +1,276 @@
+ScreenManager:
+    #transition:SlideTransition()
+
+    MDScreen:  #screen a
+        
+        name:"screen A"
+        md_bg_color: "white"
+        BoxLayout:
+            spacing:"10dp"
+            orientation:"vertical"
+            padding:0
+            
+
+            MDTopAppBar:
+                elevation:0
+                #anchor_title: "right"
+                #opposite_colors:False
+                adaptive_size: True
+                md_bg_color:1,1,1,1
+                pos_hint:{"center_x":.5,"center_y":.5}
+                #opacity:0.5
+                MDLabel:
+                    text:"Catholic Missal"
+                    halign:"center"
+                    
+            MDScrollView:                    #  MDScrollView:
+                size_hint:1,1
+                #scroll_x: False
+                #scroll_y: True   
+
+                MDGridLayout:
+                    size_hint:1,None
+                    height:2000        #incress the hight 
+                    adaptive_height:True
+                    #orientation:"vertical"
+                    cols:2
+                #MDStackLayout:
+                    adaptive_height:False
+                    adaptive_widght:False
+                #BoxLayout:
+                    spacing:"10dp"
+                #    orientation:"vertical"
+                    padding: 7
+                    md_bg_color: "white"
+
+ #                   MDCard:
+  #                      elevation:0
+   #                     padding: 4
+    #                    size_hint:1,1
+     #                   #size: "200dp", "100dp"
+      #                  md_bg_color:"white"
+       #                 pos_hint: {"center_x": .5, "center_y": .5}
+        #                adaptive_size: True
+
+                                
+                    MDRaisedButton:
+                        elevation:0
+                        size_hint:1,1
+                        text: "Date"
+                        pos_hint: {"center_x": .5,"center_y": .5}
+                        #y:"36dp"  
+                        #user_font_size:"500sp"
+                        #size:"200dp","200dp"     
+                        #height:self.parent.height
+                        #width:'200dp'
+                        #icon:"Annotation 2023-11-19 065943.png"
+                        #size_hint:1,1
+                        #adaptive_size: True
+                        on_press:
+                            app.date()
+                            root.current = "screen B"
+                            root.transition.direction="left"
+
+                        Image:
+                            allow_stretch:True
+                            keep_ratio:False
+                            source: "app_image//bible 1.png"
+                            size_hint:None,None
+                            height:self.parent.height
+                            width:self.parent.width
+
+                                
+                                
+                            
+#                    MDCard:
+ #                       adaptive_size: True
+  #                      elevation:0
+   #                     padding: 4
+    #                    size_hint:1,1
+     #                   #size: "200dp", "100dp"
+      #                  md_bg_color:"white"
+       #                 pos_hint: {"center_x": .5, "center_y": .5}
+                        
+                        
+
+                    MDRaisedButton:
+                        
+                        elevation:0
+                        size_hint:1,1
+                        text: "Date"
+                        pos_hint: {"center_x": .5,"center_y": .5}
+                        
+                        on_press:
+                            root.current = "screen c"
+                            root.transition.direction="left"
+
+                        Image:
+                            allow_stretch:True
+                            keep_ratio:False
+                            source:"app_image//5ab887a3365592adfc142477a4949c70.png"
+                            size_hint:None,None
+                            height:self.parent.height
+                            width:self.parent.width
+                    
+
+#                    MDCard:
+ #                       padding: 4
+  #                      elevation:0
+   #                     size_hint:1,1
+    #                    #size: "200dp", "100dp"
+     #                   md_bg_color:"white"
+      #                  pos_hint: {"center_x": .5, "center_y": .5}
+       #                 adaptive_size: True
+
+                    MDRaisedButton:
+                        elevation:0
+                        text:"testing"
+                        size_hint:1,1
+                        on_press:app.testing()
+
+
+
+                    
+
+                    MDRaisedButton:
+                        elevation:0
+                        text:"here"
+                        size_hint:1,1
+                        on_press:app.dialog_open()
+
+
+
+                    
+
+                    MDRaisedButton:
+                        elevation:0
+                        size_hint:1,1
+                        on_press:app.dialog_open()
+
+
+                    
+
+                    MDRaisedButton:
+                        elevation:0
+                        size_hint:1,1
+                        on_press:app.dialog_open()
+
+
+                    
+
+                    MDRaisedButton:
+                        elevation:0
+                        size_hint:1,1
+                        on_press:app.dialog_open()
+
+
+                    
+
+                    MDRaisedButton:
+                        elevation:0
+                        size_hint:1,1
+                        on_press:app.dialog_open()
+
+                        
+                    
+
+                    MDRaisedButton:
+                        elevation:0
+                        size_hint:1,1
+                        on_press:app.dialog_open()
+
+
+                    
+
+                    MDRaisedButton:
+                        elevation:0
+                        size_hint:1,1
+                        on_press:app.dialog_open()
+
+    MDScreen:  #screen b
+        name: "screen B"
+        orientation:"vertical"
+        MDBoxLayout:
+            #pos_hint: {"center_x": .5, "center_y": .5}
+            #size_hint:None,None
+            #size:root.width,root.height
+            spacing:"1dp"
+            orientation:"vertical"
+            
+            MDTopAppBar:
+                elevation:0
+                md_bg_color:1,1,1,1
+                #title: "Daily Readings"
+                pos_hint:{"center_x":.5,"center_y":.5}
+                #adaptive_size: True
+                MDLabel:
+                    text:"Daily Readings"
+                    halign:"center"
+                
+                MDIconButton:
+                    icon:"arrow-left"
+                    on_release:
+                        root.current = "screen A"
+                        root.transition.direction="right" 
+            #MDRaisedButton:
+            MDIconButton:
+
+                #size_hint:1,None
+                #text: "Date"
+                icon:"calendar-range"
+                pos_hint: {"center_x": .5}
+                y:"36dp" 
+                on_release:app.date()
+            MDBoxLayout:
+                padding:9
+                MDScrollView:
+                    padding:5
+                    #do_scroll_x: False
+                    #do_scroll_y: True    
+                    MDLabel:
+                        id:Missal
+                        text: "Missal"
+                        halign: "left"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        markup:True
+
+    MDScreen:    #screen c
+        name: "screen c"
+        BoxLayout:
+            #pos_hint: {"center_x": .5, "center_y": .5}
+            #size_hint:None,None
+            #size:root.width,root.height
+            spacing:"1dp"
+            orientation:"vertical"
+
+            BoxLayout:
+                #pos_hint: {"center_x": .5, "center_y": .5}
+                #size_hint:None,None
+                #size:root.width,root.height
+                spacing:"1dp"
+                orientation:"vertical"
+                
+                MDTopAppBar:
+                    elevation:0
+                    md_bg_color:1,1,1,1
+                    #title: "Catholic Mixer"
+                    #anchor_title: "right"
+                    MDIconButton:
+                        icon:"arrow-left"
+                        on_release:
+                            root.current = "screen A"
+                            root.transition.direction="right"
+
+                MDLabel:
+                    text:"bible"
+                    halign:"center"
+            
+
+#<DIALOG_BOX>:
+ #   text:"discard draft?" 
+  #  button:
+   #     MDFlatButton:
+    #        text:"CANCEL"                     
+     #   MDFlatButton
+      #      text:"DISCARD"
