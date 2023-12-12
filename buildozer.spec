@@ -13,7 +13,7 @@ package.domain = org.missal
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atxt,txt
+source.include_exts = py,png,jpg,kv,atxt,txt,app_image/missal/*
 
 # (list) List of inclusions using pattern matching
 source.include_patterns = app_image/missal/*
