@@ -47,6 +47,7 @@ class Test(MDApp):
             #self.file=open("C:\\Users\\Nnonyelume\\Desktop\\clone\\R@1n.txt")
             #print(self.path)
             self.path= resource_find(self.filename)
+            print(f'logout----->located{resource_find(self.filename)}')
             if self.path:
                 print(f'logout----->located{resource_find(self.filename)}')
                 with open(self.path,"r",encoding="ISO-8859-1") as file:
@@ -56,16 +57,24 @@ class Test(MDApp):
                     self.root.ids.Missal.text=self.missal
                     print('logout----->file is read to MDLabel')
             else:
-                #self.dialog_open()
-                print('logout----->folder not found and not open ')
-                print ('logout----->and error may have occour')
+                self.path1=self.filename
+                with open(self.path1,"r",encoding="ISO-8859-1") as file1:
+                    print('logout----->--------------located and file1 is open------------------')
+                    self.missal = file1.read()
+                    print('logout----->file1 is read ')
+                    self.root.ids.Missal.text=self.missal
+                    print('logout----->file1 is read to MDLabel')
+                
                 
 
             
         except FileNotFoundError:
-            pass
+            #pass
               #<-------------------------------------------------------------------------------------
-         #   print("No such file or directory")
+            print("No such file or directory")
+            #self.dialog_open()
+            print('logout----->folder not found and not open ')
+            print ('logout----->and error may have occour')
         #print(f'missal\\{value}.txt')
         
 
