@@ -1,1 +1,1 @@
-CMOS Setup Utility: The BIOS stores configuration settings in a small amount of non-volatile memory called CMOS (Complementary Metal-Oxide-Semiconductor). These settings include information about hardware parameters, system time, and boot order. Users can access and modify these settings through the CMOS Setup Utility, usually accessible by pressing a specific key during the boot process (often Del, F2, or F10).
+CMOS Setup Utility: 
