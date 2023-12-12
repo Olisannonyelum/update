@@ -74,6 +74,7 @@ class Test(MDApp):
 
             
         except FileNotFoundError:
+            self.root.ids.Missal.text=str(value)
             #pass
               #<-------------------------------------------------------------------------------------
             print("No such file or directory")
