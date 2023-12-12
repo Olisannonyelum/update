@@ -42,7 +42,7 @@ class Test(MDApp):
     def selec_date(self,instance,value,date_range):
         print("logout---->",str(value))
         try:
-            self.filename=f'logout----->app_image\\missal\\{value}.txt'
+            self.filename=f'app_image\\missal\\{value}.txt'
             print(f'logout------>filename is {self.filename}')
             #self.file=open("C:\\Users\\Nnonyelume\\Desktop\\clone\\R@1n.txt")
             #print(self.path)
