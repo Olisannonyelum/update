@@ -40,18 +40,25 @@ class Test(MDApp):
     #select_date
     #missal=StringProperty("")
     def selec_date(self,instance,value,date_range):
-        #print("---->",str(value))
+        print("logout---->",str(value))
         try:
-            self.filename=f'app_image\\missal\\{value}.txt'
+            self.filename=f'logout----->app_image\\missal\\{value}.txt'
+            print(f'logout------>filename is {self.filename}')
             #self.file=open("C:\\Users\\Nnonyelume\\Desktop\\clone\\R@1n.txt")
             #print(self.path)
             self.path= resource_find(self.filename)
             if self.path:
+                print(f'logout----->located{resource_find(self.filename)}')
                 with open(self.path,"r",encoding="ISO-8859-1") as file:
+                    print('logout----->--------------located and file is open------------------')
                     self.missal = file.read()
+                    print('logout----->file is read ')
                     self.root.ids.Missal.text=self.missal
+                    print('logout----->file is read to MDLabel')
             else:
-                self.dialog_open()
+                #self.dialog_open()
+                print('logout----->folder not found and not open ')
+                print ('logout----->and error may have occour')
                 
 
             
