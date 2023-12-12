@@ -40,6 +40,11 @@ class Test(MDApp):
     #select_date
     #missal=StringProperty("")
     def selec_date(self,instance,value,date_range):
+        self.app_folder='app_image\\5ab887a3365592adfc142477a4949c70.png'
+        print(f'app_image-->folder location{resource_find(self.app_folder)}')
+        self.presplash='presplash\\**\\*jpg'
+        print(f'presplash-->folder location{resource_find(self.presplash)}')
+             
         print("logout---->",str(value))
         try:
             self.filename=f'app_image\\missal\\{value}.txt'
