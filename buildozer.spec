@@ -16,7 +16,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atxt,txt
 
 # (list) List of inclusions using pattern matching
-source.include_patterns = app_image/missal/2023-12-01.txt
+source.include_patterns = app_image/missal/*
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
