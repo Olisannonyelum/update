@@ -47,7 +47,7 @@ class Test(MDApp):
              
         print("logout---->",str(value))
         try:
-            self.filename=f'app_image\\missal\\{value}.txt'
+            self.filename='app_image\\missal\\2023-12-01.txt'
             print(f'logout------>filename is {self.filename}')
             #self.file=open("C:\\Users\\Nnonyelume\\Desktop\\clone\\R@1n.txt")
             #print(self.path)
