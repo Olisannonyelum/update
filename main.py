@@ -122,8 +122,8 @@ class Test(MDApp):
         return Builder.load_file("mymd.kv")   #Builder.load_string(KV) #Builder.load_file("mymd.kv")
     def on_start(self):
         #pass
-        with open('app_image\\missal\\2023-12-01.txt') as file:
-            self.root.ids.Missal.text=file.read()
+        #with open('app_image\\missal\\2023-12-01.txt') as file:
+            #self.root.ids.Missal.text=file.read()
 
 
     
