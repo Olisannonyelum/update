@@ -15,6 +15,7 @@ from kivy.properties import StringProperty
 from kivymd.uix.dialog import MDDialog
 from kivymd.uix.button import MDFlatButton
 from kivy.resources import resource_find
+from threading import Thread
 
 #Window.size=(dp(1080),dp(1920))
 
@@ -38,50 +39,38 @@ class Test(MDApp):
     
     #value=StringProperty()
     #select_date
-    #missal=StringProperty("")
+    filename=StringProperty("")
+    missal=StringProperty("hell")
     def selec_date(self,instance,value,date_range):
-        self.app_folder='app_image\\5ab887a3365592adfc142477a4949c70.png'
-        print(f'app_image-->folder location{resource_find(self.app_folder)}')
-        self.presplash='presplash\\**\\*jpg'
-        print(f'presplash-->folder location{resource_find(self.presplash)}')
-             
-        print("logout---->",str(value))
+        self.filename=f'app_image\\missal\\{value}.txt'
+        #print("---->",str(value))
+        Thread(target=self.load_content).start()
+
+    def load_content(self):
+
         try:
-            self.filename='app_image\\missal\\2023-12-01.txt'
-            print(f'logout------>filename is {self.filename}')
+            
+            #doc = docx.Document('docx\\somto.docx')
+            #content = "\n".join([paragraph.text for paragraph in doc.paragraphs])
+
+            #self.filename=f'app_image\\missal\\{value}.txt'
             #self.file=open("C:\\Users\\Nnonyelume\\Desktop\\clone\\R@1n.txt")
             #print(self.path)
             self.path= resource_find(self.filename)
-            print(f'logout----->located{resource_find(self.filename)}')
             if self.path:
-                print(f'logout----->located{resource_find(self.filename)}')
                 with open(self.path,"r",encoding="ISO-8859-1") as file:
-                    print('logout----->--------------located and file is open------------------')
-                    self.missal = file.read()
-                    print('logout----->file is read ')
-                    self.root.ids.Missal.text=self.missal
-                    print('logout----->file is read to MDLabel')
+                    missal = file.read()
+                    self.root.ids.Missal.text=missal
             else:
-                self.path1=self.filename
-                with open(self.path1,"r",encoding="ISO-8859-1") as file1:
-                    print('logout----->--------------located and file1 is open------------------')
-                    self.missal = file1.read()
-                    print('logout----->file1 is read ')
-                    self.root.ids.Missal.text=self.missal
-                    print('logout----->file1 is read to MDLabel')
-                
+                self.dialog_open()
                 
 
             
         except FileNotFoundError:
-            self.root.ids.Missal.text=str(value)
-            #pass
-              #<-------------------------------------------------------------------------------------
-            print("No such file or directory")
-            #self.dialog_open()
-            print('logout----->folder not found and not open ')
-            print ('logout----->and error may have occour')
-        #print(f'missal\\{value}.txt')
+            pass
+            #<-------------------------------------------------------------------------------------
+        #   print("No such file or directory")
+    #print(f'missal\\{value}.txt')
         
 
 
@@ -121,11 +110,7 @@ class Test(MDApp):
         self.theme_cls.primary_palette = "Teal"
         return Builder.load_file("mymd.kv")   #Builder.load_string(KV) #Builder.load_file("mymd.kv")
     def on_start(self):
-        #pass
-        #with open('app_image\\missal\\2023-12-01.txt') as file:
-            #self.root.ids.Missal.text=file.read()
-
-
+        pass
     
 
 Test().run()
