@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = missal
+title = Bible
 
 # (str) Package name
 package.name = bible
