@@ -1,0 +1,502 @@
+ScreenManager:
+
+    MDScreen
+        name:'1'
+        #size_hint:1,1
+        MDBoxLayout:
+            md_bg_color: 'black'
+            orientation:'vertical'
+            MDTopAppBar:
+                title:'tool'
+                md_bg_color: 'black' #app.theme_cls.theme_style
+            
+            
+            #MDBoxLayout:
+            ScrollView:
+                #MDBoxLayout:
+                MDGridLayout:
+                #StackLayout:
+                    cols:1
+                    padding:5
+                    spacing:5
+                    #orientation:'vertical'
+                    halign:"center"
+                    size_hint:1,None
+                    #size_hint_y:4.9
+                    height:self.minimum_height
+                    md_bg_color: 'black'
+
+                    MDFillRoundFlatButton:
+                        #md_bg_color: "white"
+                        #text_color: "black"
+                        id:Genesis
+                        text:'Genesis'
+                        halign:"center"
+                        on_press:
+                            app.next_screen(self)
+                    MDFillRoundFlatButton:
+                        id:Exodus
+                        text:'Exodus'
+                        #md_bg_color: "white"
+                        #text_color: "black"
+                        on_press:
+                            app.next_screen(self)
+                    
+                    MDFillRoundFlatButton:
+                        id:Leviticus
+                        text:'Leviticus'
+                        #md_bg_color: "white"
+                        #text_color: "black"
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                    
+                        id:Numbers
+                        #md_bg_color: "white"
+                        #text_color: "black"
+                        text:'Numbers'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Deuteronomy
+                        text:'Deuteronomy'
+                        on_press:
+                            app.next_screen(self)
+                    
+                    MDFillRoundFlatButton:
+                        id:Joshua
+                        text:'Joshua'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Judge
+                        text:'Judge'
+                        on_press:
+                            app.next_screen(self)
+                    MDFillRoundFlatButton:
+                        id:Ruth
+                        text:'Ruth'
+                        on_press:
+                            app.next_screen(self)
+                    
+                    MDFillRoundFlatButton:
+                        id:1_Samuel
+                        text:'1 Samuel'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:2_Samuel
+                        text:'2 Samuel'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:1_Kings
+                        text:'1 Kings'
+                        on_press:
+                            app.next_screen(self)
+                    
+                    MDFillRoundFlatButton:
+                        id:2_Kings
+                        text:'2 Kings'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:1_Chronicles
+                        text:'1 Chronicles'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:2_Chronicles
+                        text:'2 Chronicles'
+                        on_press:
+                            app.next_screen(self)
+                    
+                    MDFillRoundFlatButton:
+                        id:Ezra
+                        text:'Ezra'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Nehemiah
+                        text:'Nehemiah'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Esther
+                        text:'Esther'
+                        on_press:
+                            app.next_screen(self)
+                    
+                    MDFillRoundFlatButton:
+                        id:Job
+                        text:'Job'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Psalm
+                        text:'Psalm'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Proverbs
+                        text:'Proverbs'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Ecclesiastes
+                        text:'Ecclesiastes'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Song_of_songs
+                        text:'Song of songs'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Isaiah
+                        text:'Isaiah'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Jeremaiah
+                        text:'Jeremaiah'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Lamentations
+                        text:'Lamentations'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Ezekiel
+                        text:'Ezekiel'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Daniel
+                        text:'Daniel'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Hosea
+                        text:'Hosea'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Joel
+                        text:'Joel'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Amos
+                        text:'Amos'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Obadiah
+                        text:'Obadiah'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Jonah
+                        text:'Jonah'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Micah
+                        text:'Micah'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Nahum
+                        text:'Nahum'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Habakkuk
+                        text:'Habakkuk'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Zephaniah
+                        text:'Zephaniah'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Haggai
+                        text:'Haggai'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Zechariah
+                        text:'Zechariah'
+                        on_press:
+                            app.next_screen(self)
+                    
+                    MDFillRoundFlatButton:
+                        id:Malachi
+                        text:'Malachi'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Matthew
+                        text:'Matthew'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Mark
+                        text:'Mark'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Luke
+                        text:'Luke'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:John
+                        text:'John'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Acts
+                        text:'Acts'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Romans
+                        text:'Romans'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:1_corinthians
+                        text:'1 Corinthians'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Galatians
+                        text:'Galatians'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Ephesians
+                        text:'Ephesians'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Philippians
+                        text:'Philippians'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Colossians
+                        text:'Colossians'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:1_Thessalonians
+                        text:'1 Thessalonians'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:1_Timothy
+                        text:'1 Timothy'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:2_Timothy
+                        text:'2 Timothy'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Titus
+                        text:'Titus'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Philemon
+                        text:'Philemon'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Hebrews
+                        text:'Hebrews'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:James
+                        text:'James'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:1_Peter
+                        text:'1 Peter'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:2_Peter
+                        text:'2 Peter'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:1_John
+                        text:'1 john'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:2_John
+                        text:'2 john'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:3_john
+                        text:'3 John'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Jude
+                        text:'Jude'
+                        on_press:
+                            app.next_screen(self)
+
+                    MDFillRoundFlatButton:
+                        id:Reveltion
+                        text:'Reveltion'
+                        on_press:
+                            app.next_screen(self)
+
+                    
+                    
+                    
+                   
+    MDScreen:
+        name:'2'
+        MDGridLayout:
+            rows:2
+            md_bg_color: 'black'
+            MDTopAppBar:
+                #size_hint:1,1
+                halign:'center'
+                md_bg_color: "black"
+                #MDGridLayout:
+                 #   size_hint:1,1
+                  #  cols:2
+                MDIconButton:
+                    #size_hint:".5",".5"
+                    elevation: 0
+                    icon:"arrow-left"
+                    halign:"right"
+                    on_press:
+                        root.current='1'
+                        root.transition.direction='right'
+            MDScrollView:
+                MDBoxLayout:
+                    size_hint:1,None
+                    md_bg_color: 'black'
+                    height:root.ids.bible.height
+                    MDLabel:
+                        size_hint:1,None
+                        height:self.texture_size[1]
+                        id:bible
+                        #ext:root.ids.button.text
+                        md_bg_color: 'black'
+                        #font_style:'H6'
+                        font_size:'15sp'
+                        #font_name:'serif'
+
+<Dialog>:
+    size_hint:.7,.3
+    background_color : 0.2,0.2,0.2,1
+    height:150
+    #title_color: 0.2,0.2,0.2,1
+    MDBoxLayout:
+        size_hint:1,1
+        orientation:"vertical"
+        MDGridLayout:
+            size_hint:1,1
+            rows:1
+
+            MDTextField:
+                hint_text: "chapter"
+                id:chapter
+                size_hint:1,1
+                
+
+            MDTextField:
+                hint_text: "vers"
+                id:vers
+                size_hint:1,1
+                
+            
+            MDTextField:
+                hint_text: "To"
+                id:To
+                size_hint:1,1
+                
+                
+        MDGridLayout:
+            size_hint:1,1
+            rows:1
+            MDFlatButton:
+                id:cancel
+                size_hint:1,1
+                text:"cancel"
+            MDFlatButton:
+                id:ok
+                size_hint:1,1
+                text:"ok"
+
+
