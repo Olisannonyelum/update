@@ -16,7 +16,7 @@ from kivy.clock import Clock
 class Dialog(Popup):
     pass
 
-#Peter
+#Peter why name
 class myapp(MDApp):
     #    Clock.schedule_once(lambda dt: self.load_text_file(self.path),0)
 
